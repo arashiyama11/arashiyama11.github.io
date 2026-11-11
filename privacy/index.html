@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー | contcap</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><a class="brand" href="/">contcap</a><nav aria-label="サイト内"><a href="/privacy/" aria-current="page">プライバシーポリシー</a><a href="/terms/">利用条件</a></nav></header>
+  <main>
+    <p class="eyebrow">Privacy policy</p>
+    <h1>プライバシーポリシー</h1>
+    <p>施行・最終更新日：2026年11月11日</p>
+    <p>運用者 arashiyama11 は、個人用の録画・保存アプリケーション「contcap」におけるデータの取り扱いを、以下のとおり定めます。</p>
+    <section><h2>アクセス・保存するデータ</h2>
+      <ul>
+        <li>本人がキャプチャ機器から入力した映像・音声と、その録画ファイル。</li>
+        <li>録画の開始・終了時刻、ファイル名、サイズ、ハッシュ、Drive上のファイルID、転送・削除状態などの記録情報。</li>
+        <li>Google Drive上の保存先フォルダとファイルの一覧・メタデータ、およびアカウントのストレージ容量情報。初期設定時には、保存先を識別するため親フォルダの一覧も参照します。</li>
+        <li>本人がGoogleに認可した際に発行されるOAuthアクセストークン・リフレッシュトークン、および動作状況やエラーを記録する運用ログ。</li>
+      </ul>
+      <p>Google Driveへの読み書きに必要な権限をGoogleの認可画面で要求します。権限自体は専用フォルダ以外のDriveファイルへのアクセスも許可しますが、アプリの通常の転送・削除は設定した専用フォルダと台帳に基づいて行います。</p>
+    </section>
+    <section><h2>利用目的</h2>
+      <p>映像・音声の録画、本人のDriveへの保存、転送結果の照合、保持容量の管理、障害からの復旧に利用します。録画の視聴や配信は、本人が設定したOBSなどの受信先で行います。</p>
+      <p>Googleから取得したデータを広告、販売、信用評価、汎用AI・機械学習モデルの学習に利用しません。</p>
+    </section>
+    <section><h2>保存場所と保護</h2>
+      <p>録画と台帳は本人が管理するサーバーに保存し、確定した録画と付随する記録情報を本人のGoogle Driveの専用フォルダへ送信します。Google APIとの通信にはHTTPSを使用します。</p>
+      <p>OAuth認証情報はサーバー上のアクセス制限した設定ファイルで保持します。この公開サイトや公開リポジトリには録画、トークン、クライアントシークレットを掲載しません。</p>
+    </section>
+    <section><h2>共有と外部サービス</h2>
+      <p>Driveへの保存にGoogleのサービスを使用します。本人が設定した視聴・配信先への出力を除き、アプリが録画やGoogleユーザーデータを他者向けに公開・販売する機能はありません。本人がDriveや配信先で設定する共有範囲は、本人が管理します。</p>
+      <p>Googleから取得した情報の利用・転送は、Limited Use要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。</p>
+    </section>
+    <section><h2>保持期間と削除</h2>
+      <p>録画は設定した容量の範囲で保持します。Driveでは、容量を確保するため、台帳で識別し照合した古い録画を専用フォルダから完全削除します。ローカルでは、Driveへの転送・検証が完了した古い録画を削除します。転送が完了していない録画は容量調整による削除から保護し、必要に応じて新規録画を待機します。</p>
+      <p>削除済み録画の再転送を防ぐため、録画に関する台帳の情報は録画本体の削除後もサーバーに残ります。動作ログはローテーションで保持量を制限します。</p>
+      <p>利用を終了してデータを全て削除する場合は、本人がアプリを停止したうえで、サーバー上の録画・台帳・ログ・認証設定、およびDriveの専用フォルダを削除します。</p>
+    </section>
+    <section><h2>認可の取り消し</h2>
+      <p><a href="https://myaccount.google.com/connections">Googleアカウントの接続管理</a>から本アプリへのアクセス権を取り消せます。取り消し後はDriveへの転送・確認・自動削除ができなくなります。既存の録画データがこの操作だけで削除されることはありません。</p>
+    </section>
+    <section><h2>この公開サイト</h2>
+      <p>このサイトはGitHub Pagesで公開する静的な説明ページです。アプリ独自の広告、アクセス解析、Cookie、Googleログイン機能は設置していません。配信基盤での通信情報の取り扱いには<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーステートメント</a>が適用されます。</p>
+    </section>
+    <section><h2>変更・お問い合わせ</h2>
+      <p>取り扱いを変更する場合はこのページを更新します。Googleユーザーデータの利用目的や範囲を拡大する場合は、必要な同意を得てから変更します。</p>
+      <p>連絡先：<a href="https://github.com/arashiyama11/arashiyama11.github.io/issues">arashiyama11 — 公開サイトのGitHub Issues</a>。秘密情報や録画を投稿せず、変更・削除などの依頼内容をお知らせください。</p>
+    </section>
+  </main>
+  <footer><a href="/">contcap ホーム</a> · <a href="/terms/">利用条件</a></footer>
+</body>
+</html>

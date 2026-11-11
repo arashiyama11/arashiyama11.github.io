@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="contcapは、個人用の映像・音声の自動録画とGoogle Driveへの保存を行うアプリケーションです。">
+  <title>contcap — 個人用の自動録画・Drive保存</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><a class="brand" href="/">contcap</a><nav aria-label="サイト内"><a href="/privacy/">プライバシーポリシー</a><a href="/terms/">利用条件</a></nav></header>
+  <main>
+    <p class="eyebrow">Personal recording &amp; archive</p>
+    <h1>自分の映像を録画し、<br>自分のDriveへ保存。</h1>
+    <p class="lead">contcapは、USBキャプチャ機器の映像・音声を自動録画し、本人のGoogle Driveへ保存する、個人運用のアプリケーションです。</p>
+    <section>
+      <h2>できること</h2>
+      <ul>
+        <li>HDMI入力の有効状態を検出し、録画を開始・停止します。</li>
+        <li>録画を毎時のファイルに分割し、異なる録画を別名で保存します。</li>
+        <li>確定した録画と付随する記録情報をGoogle Driveの専用フォルダへ転送し、サイズとハッシュを照合します。</li>
+        <li>設定した保持容量に応じて、古い管理対象の録画を削除します。</li>
+        <li>設定したネットワーク経由で、OBSなどへ映像・音声を届けます。</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Google Driveへのアクセスについて</h2>
+      <p>Googleの認可画面で本人が許可したアカウントへ、rcloneを通じてアクセスします。録画のアップロード、転送結果の照合、容量の確認、自動削除に使用します。通常の保存・削除対象は、設定した専用フォルダ内の管理対象ファイルです。</p>
+      <p>初期設定時には保存先を識別するため、親フォルダの一覧も参照します。要求するGoogle Driveの権限は専用フォルダ以外へもアクセス可能な権限を含むため、取り扱いの詳細を<a href="/privacy/">プライバシーポリシー</a>に記載しています。</p>
+    </section>
+    <section>
+      <h2>運用者・連絡先</h2>
+      <p>運用者：arashiyama11。本人のサーバーとGoogleアカウントで使用する個人用アプリです。一般向けのアカウント登録・録画保管サービスは提供していません。</p>
+      <p>お問い合わせは、<a href="https://github.com/arashiyama11/arashiyama11.github.io/issues">公開サイトのGitHub Issues</a>へお寄せください。認証情報や録画データは投稿しないでください。</p>
+    </section>
+  </main>
+  <footer><p>contcap · 運用者 arashiyama11</p><a href="/privacy/">プライバシーポリシー</a> · <a href="/terms/">利用条件</a></footer>
+</body>
+</html>
